@@ -1,9 +1,6 @@
 # 环境与密钥
 .env
 
-# 个人数据（本地保留，不上传）
-resume.txt
-
 # 虚拟环境
 .venv/
 venv/
@@ -17,3 +14,9 @@ __pycache__/
 
 # 向量库数据（本地生成，可重建，不上传）
 chroma_db/
+
+# 上传的简历原文与摘要（含个人信息，不上传）
+storage/
+
+# 评测报告（本地生成）
+eval_report.json
