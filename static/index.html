@@ -514,6 +514,9 @@ button:focus-visible, .res-item:focus-visible, textarea:focus-visible, .chip:foc
 
 .d-pane[hidden] { display: none; }
 .d-loading { display: flex; align-items: center; gap: 9px; color: var(--ink-faint); font-size: 13px; }
+/* 作者样式里的 display:flex 会盖掉 hidden 属性的默认 display:none，
+   所以凡是用 hidden 控制显隐的元素，都要显式补这条规则。 */
+.d-loading[hidden] { display: none; }
 .d-summary { font-size: 14px; line-height: 1.9; color: var(--ink); white-space: pre-wrap; }
 .d-link {
   margin-top: 12px; border: none; background: none; cursor: pointer;
